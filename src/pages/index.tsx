@@ -127,11 +127,14 @@ function HomepageHeader() {
           </p>
 
           <div className={styles.buttons}>
-            <Link className={clsx("button", styles.primaryButton)} to="/about">
-              About Me →
+            <Link className={clsx("button", styles.primaryButton)} to="/docs">
+              Documents →
             </Link>
-            <Link className={clsx("button", styles.secondaryButton)} to="/docs">
-              Docs
+            <Link
+              className={clsx("button", styles.secondaryButton)}
+              to="/docs/research"
+            >
+              Research
             </Link>
           </div>
         </div>
