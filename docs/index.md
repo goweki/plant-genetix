@@ -1,4 +1,5 @@
 ---
+title: Introduction
 sidebar_position: 1
 ---
 
@@ -34,9 +35,8 @@ This documentation will give you access to:
 
 ## Getting Started
 
-- Explore the **[Research Overview](./research.md)** to see the current focus areas.
-- Visit **[Methods & Tools](./methods.md)** for tutorials and workflows.
-- Check out **[Applications](./apps.md)** for hands-on tools.
+- Explore the **[Research Overview](./research)** to see the current focus areas.
+- Visit **[Methods & Tools](./methods)** for tutorials and workflows.
 
 ---
 
