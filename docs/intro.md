@@ -2,46 +2,43 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Welcome to My Documentations
 
-Let's discover **Docusaurus in less than 5 minutes**.
+This is a platform by **Nelson Lubanga** showcasing research, innovation, and applied technologies in **plant science**.  
+This site brings together expertise in **quantitative genetics, predictive modeling, bioinformatics, and machine learning** to advance next-generation crop improvement.
+
+---
+
+## About Nelson
+
+With over a decade of experience in **R&D and academic research**, Nelson Lubanga has worked across a variety of crops including **tea, canola, ornamentals, and Miscanthus**.  
+His work focuses on:
+
+- **Plant Breeding & Genomics** – applying advanced statistical and genomic tools to accelerate crop improvement.
+- **Quantitative Genetics & Predictive Modeling** – designing breeding strategies with robust data-driven insights.
+- **Bioinformatics & Machine Learning** – leveraging modern computational tools for genome-wide analysis.
+- **R Shiny Applications** – developing interactive tools to visualize and interpret research data.
+
+---
+
+## What You'll Find Here
+
+This documentation will give you access to:
+
+- 📑 **Research Notes** – summaries of key findings and published work.
+- 🧬 **Methods & Tools** – tutorials and insights on bioinformatics pipelines, machine learning models, and breeding strategies.
+- 🌱 **Case Studies** – practical applications of genomics and AI in crop improvement.
+- 💻 **Code & Applications** – open-source scripts, workflows, and Shiny apps for plant science.
+
+---
 
 ## Getting Started
 
-Get started by **creating a new site**.
+- Explore the **[Research Overview](./research.md)** to see the current focus areas.
+- Visit **[Methods & Tools](./methods.md)** for tutorials and workflows.
+- Check out **[Applications](./apps.md)** for hands-on tools.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+---
 
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+💡 **The mission**:  
+_Harnessing the power of genomics, data science, and innovation to shape the future of plant breeding and agriculture._

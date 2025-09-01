@@ -5,7 +5,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: "PhytoNext",
+  title: "Nelson Lubanga",
   tagline: "Advancing Plant Science for the Next Generation",
   favicon: "img/favicon.ico",
 
@@ -70,19 +70,19 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
+    image: "img/NL_social_banner.jpg",
     navbar: {
-      title: "My Site",
+      title: "Home",
       logo: {
-        alt: "My Site Logo",
-        src: "img/logo.svg",
+        alt: "logo",
+        src: "img/NL_symbol.svg",
       },
       items: [
         {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Tutorial",
+          label: "Docs",
         },
         { to: "/blog", label: "Blog", position: "left" },
         {
