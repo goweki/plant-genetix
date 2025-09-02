@@ -105,20 +105,18 @@ function HomepageHeader() {
         <div
           className={clsx(styles.heroContent, { [styles.loaded]: isLoaded })}
         >
-          {/* <MolecularOrbitAnimation /> */}
-          <img
+          <MolecularOrbitAnimation />
+          {/* <img
             src={"img/profile_photo.jpg"}
             alt="photo"
             className={styles.heroLogo}
-          />
+          /> */}
 
           <Heading as="h1" className={styles.heroTitle}>
             {siteConfig.title}
           </Heading>
 
-          <h2 className={styles.heroSubtitle}>
-            Plant Scientist & Genomic Selection Specialist
-          </h2>
+          <h2 className={styles.heroSubtitle}>{siteConfig.tagline}</h2>
 
           <p className={styles.heroDescription}>
             10 years of R&D excellence in plant breeding, quantitative genetics,
