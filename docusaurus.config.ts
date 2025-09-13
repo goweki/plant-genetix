@@ -5,8 +5,8 @@ import type * as Preset from "@docusaurus/preset-classic";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: "Phyto-Next",
-  tagline: "Advancing Plant Science for the Next Generation",
+  title: "PlantGenetix Research",
+  // tagline: "Advancing Plant Science for the Next Generation",
   favicon: "img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future

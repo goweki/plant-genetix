@@ -7,8 +7,17 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
-
 import styles from "./index.module.css";
+import { Check } from "lucide-react";
+
+const plantGenetixServices = [
+  "Genomic Selection Strategy: Help breeding programs optimize trait selection using predictive models (Linear mixed models and Machine learning models)",
+  "Sparse testing: Optimising resources by reducing the cost of multi-environment breeding trials",
+  "Trait Heritability Analysis: Offer statistical insights into breeding value and genetic variance.",
+  "Genotype by Environment (GxE) analysis",
+  "Breeding Program Design: Advise on crossing schemes, trial design, and data analysis pipelines.",
+  "Genome wide association mapping (GWAS) and QTL mapping",
+];
 
 const MolecularOrbitAnimation = () => {
   const [rotation, setRotation] = useState(0);
@@ -66,7 +75,13 @@ const FloatingMolecule = ({ delay = 0, size = "small" }) => {
   );
 };
 
-const FeatureCard = ({ title, description, icon }) => {
+interface FeatureCardProps {
+  title: string;
+  description: string;
+  icon: string;
+}
+
+const FeatureCard = ({ title, description, icon }: FeatureCardProps) => {
   return (
     <div className={styles.featureCard}>
       <div className={styles.featureIcon}>
@@ -118,25 +133,44 @@ function HomepageHeader() {
 
           <h2 className={styles.heroSubtitle}>{siteConfig.tagline}</h2>
 
-          <p className={styles.heroDescription}>
+          {/* <p className={styles.heroDescription}>
             10 years of R&D excellence in plant breeding, quantitative genetics,
             and machine learning. Currently pioneering genomic selection in
             Miscanthus to revolutionize crop improvement.
-          </p>
+          </p> */}
 
-          <div className={styles.buttons}>
-            <Link className={clsx("button", styles.primaryButton)} to="/docs">
-              Documents →
-            </Link>
-            <Link
-              className={clsx("button", styles.secondaryButton)}
-              to="/docs/research"
-            >
-              Research
-            </Link>
+          <div className={styles.glassCard}>
+            {/* Glass effect overlay */}
+            <div className={styles.glassOverlay}></div>
+
+            {/* Content */}
+            <div className={styles.cardContent}>
+              <div className={styles.serviceList}>
+                {plantGenetixServices.map((item, i) => (
+                  <div
+                    key={i}
+                    className={styles.serviceItem}
+                  >
+                    <Check className={styles.checkIcon} />
+                    <span className={styles.serviceText}>{item}</span>
+                  </div>
+                ))}
+
+                {/* <div className={styles.buttons}>
+        <Link className={clsx("button", styles.primaryButton)} to="/docs">
+          Documents →
+        </Link>
+        <Link
+          className={clsx("button", styles.secondaryButton)}
+          to="/docs/research"
+        >
+          Research
+        </Link>
+      </div> */}
+              </div>
+            </div>
           </div>
         </div>
-
         <div className={styles.scrollIndicator}>
           <div className={styles.chevronDown}>↓</div>
         </div>
