@@ -105,7 +105,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Nelson Lubanga`,
+      copyright: `Copyright © ${new Date().getFullYear()} Plant-Genetix`,
     },
     prism: {
       theme: prismThemes.github,
