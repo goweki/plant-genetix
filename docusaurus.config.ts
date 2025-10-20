@@ -18,11 +18,11 @@ const config: Config = {
   url: "https://goweki.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/PhytoNext/",
+  baseUrl: "/plant-genetix/",
 
   // GitHub pages deployment config.
   organizationName: "goweki", // Your GitHub username
-  projectName: "PhytoNext", // Your repo name
+  // projectName: "plant-genetix", // Your repo name
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
