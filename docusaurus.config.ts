@@ -6,7 +6,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "PlantGenetix Research",
-  // tagline: "Advancing Plant Science for the Next Generation",
+  tagline: "Advancing Plant Science for the Next Generation",
   favicon: "img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
