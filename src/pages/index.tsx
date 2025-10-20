@@ -10,13 +10,43 @@ import Heading from "@theme/Heading";
 import styles from "./index.module.css";
 import { Check } from "lucide-react";
 
-const plantGenetixServices = [
-  "Genomic Selection Strategy: Help breeding programs optimize trait selection using predictive models (Linear mixed models and Machine learning models)",
-  "Sparse testing: Optimising resources by reducing the cost of multi-environment breeding trials",
-  "Trait Heritability Analysis: Offer statistical insights into breeding value and genetic variance.",
-  "Genotype by Environment (GxE) analysis",
-  "Breeding Program Design: Advise on crossing schemes, trial design, and data analysis pipelines.",
-  "Genome wide association mapping (GWAS) and QTL mapping",
+const services: { name: string; description: string; icon: string }[] = [
+  {
+    name: "Genomic Selection Strategy",
+    description:
+      "Help breeding programs optimize trait selection using predictive models (linear mixed models and machine learning models).",
+    icon: "🧬",
+  },
+  {
+    name: "Sparse Testing",
+    description:
+      "Optimize resources by reducing the cost of multi-environment breeding trials through efficient experimental designs.",
+    icon: "📉",
+  },
+  {
+    name: "Trait Heritability Analysis",
+    description:
+      "Offer statistical insights into breeding value, genetic variance, and environmental influence on traits.",
+    icon: "📊",
+  },
+  {
+    name: "Genotype by Environment (GxE) Analysis",
+    description:
+      "Identify and interpret interactions between genotypes and environments to guide variety recommendations and adaptive breeding decisions.",
+    icon: "🌍",
+  },
+  {
+    name: "Breeding Program Design",
+    description:
+      "Advise on crossing schemes, trial design, selection intensity, and data analysis pipelines for improved genetic gain.",
+    icon: "🧪",
+  },
+  {
+    name: "Genome-Wide Association Study (GWAS) and QTL Mapping",
+    description:
+      "Detect genomic regions associated with important traits to accelerate marker-assisted and genomic selection strategies.",
+    icon: "🧭",
+  },
 ];
 
 const MolecularOrbitAnimation = () => {
@@ -75,19 +105,19 @@ const FloatingMolecule = ({ delay = 0, size = "small" }) => {
   );
 };
 
-interface FeatureCardProps {
-  title: string;
+interface ServiceCardProps {
+  name: string;
   description: string;
   icon: string;
 }
 
-const FeatureCard = ({ title, description, icon }: FeatureCardProps) => {
+const ServiceCard = ({ name, description, icon }: ServiceCardProps) => {
   return (
     <div className={styles.featureCard}>
       <div className={styles.featureIcon}>
         <span className={styles.iconText}>{icon}</span>
       </div>
-      <h3 className={styles.featureTitle}>{title}</h3>
+      <h3 className={styles.featureTitle}>{name}</h3>
       <p className={styles.featureDescription}>{description}</p>
     </div>
   );
@@ -133,42 +163,16 @@ function HomepageHeader() {
 
           <h2 className={styles.heroSubtitle}>{siteConfig.tagline}</h2>
 
-          {/* <p className={styles.heroDescription}>
-            10 years of R&D excellence in plant breeding, quantitative genetics,
-            and machine learning. Currently pioneering genomic selection in
-            Miscanthus to revolutionize crop improvement.
-          </p> */}
-
-          <div className={styles.glassCard}>
-            {/* Glass effect overlay */}
-            <div className={styles.glassOverlay}></div>
-
-            {/* Content */}
-            <div className={styles.cardContent}>
-              <div className={styles.serviceList}>
-                {plantGenetixServices.map((item, i) => (
-                  <div
-                    key={i}
-                    className={styles.serviceItem}
-                  >
-                    <Check className={styles.checkIcon} />
-                    <span className={styles.serviceText}>{item}</span>
-                  </div>
-                ))}
-
-                {/* <div className={styles.buttons}>
-        <Link className={clsx("button", styles.primaryButton)} to="/docs">
-          Documents →
-        </Link>
-        <Link
-          className={clsx("button", styles.secondaryButton)}
-          to="/docs/research"
-        >
-          Research
-        </Link>
-      </div> */}
-              </div>
-            </div>
+          <div className={styles.buttons}>
+            <Link className={clsx("button", styles.primaryButton)} to="#research-focus">
+              Focus Areas →
+            </Link>
+            {/* <Link
+              className={clsx("button", styles.secondaryButton)}
+              to="/docs/research"
+            >
+              Research
+            </Link> */}
           </div>
         </div>
         <div className={styles.scrollIndicator}>
@@ -198,26 +202,7 @@ function ResearchFocus() {
     return () => observer.disconnect();
   }, []);
 
-  const features = [
-    {
-      title: "Genomic Selection",
-      description:
-        "Implementing advanced genomic selection methodologies in Miscanthus breeding programs to accelerate crop improvement and optimize yield traits.",
-      icon: "🧬",
-    },
-    {
-      title: "Quantitative Genetics",
-      description:
-        "Applying statistical models and machine learning algorithms to dissect complex plant traits and predict breeding outcomes across diverse crops.",
-      icon: "📊",
-    },
-    {
-      title: "R Shiny Applications",
-      description:
-        "Developing interactive web applications for plant breeding data analysis, enabling researchers to visualize and interpret genomic data efficiently.",
-      icon: "💻",
-    },
-  ];
+
 
   return (
     <section id="research-focus" className={styles.researchSection}>
@@ -233,15 +218,15 @@ function ResearchFocus() {
         </div>
 
         <div className={styles.featuresGrid}>
-          {features.map((feature, index) => (
+          {services.map((service, index) => (
             <div
-              key={feature.title}
+              key={service.name}
               className={clsx(styles.featureWrapper, {
                 [styles.featureLoaded]: isLoaded,
               })}
               style={{ transitionDelay: `${index * 200}ms` }}
             >
-              <FeatureCard {...feature} />
+              <ServiceCard {...service} />
             </div>
           ))}
         </div>
@@ -279,7 +264,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={`Welcome to ${siteConfig.title}`}
-      description="PhytoNext: Advancing plant science through genomics, predictive modeling, and machine learning."
+      description="Advancing plant science through genomics, predictive modeling, and machine learning."
     >
       <HomepageHeader />
       <main>
