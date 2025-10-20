@@ -22,7 +22,7 @@ const config: Config = {
 
   // GitHub pages deployment config.
   organizationName: "goweki", // Your GitHub username
-  projectName: "plant-genetix", // Your repo name
+  // projectName: "plant-genetix", // Your repo name
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
