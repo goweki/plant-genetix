@@ -1,19 +1,69 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+plant-genomics:
+  label: Plant Genomics
+  permalink: /plant-genomics
+  description: Research and insights on the use of genomic data to accelerate crop improvement.
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+quantitative-genetics:
+  label: Quantitative Genetics
+  permalink: /quantitative-genetics
+  description: Applications of statistical and genetic principles to optimize plant breeding and selection.
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+predictive-modeling:
+  label: Predictive Modeling
+  permalink: /predictive-modeling
+  description: Data-driven modeling approaches for predicting plant performance and breeding outcomes.
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+bioinformatics:
+  label: Bioinformatics
+  permalink: /bioinformatics
+  description: Computational tools and workflows for analyzing genomic and transcriptomic data.
+
+machine-learning:
+  label: Machine Learning
+  permalink: /machine-learning
+  description: Applying AI and machine learning to genomic selection, trait prediction, and breeding optimization.
+
+tea-breeding:
+  label: Tea Breeding
+  permalink: /tea-breeding
+  description: Advances and strategies for improving genetic gain in tea breeding programs.
+
+r-shiny:
+  label: R Shiny
+  permalink: /r-shiny
+  description: Interactive web applications built with R Shiny for visualizing and exploring plant science data.
+
+crop-improvement:
+  label: Crop Improvement
+  permalink: /crop-improvement
+  description: Integrating genomics, statistics, and AI to develop high-performing, resilient crop varieties.
+
+sustainability:
+  label: Sustainability
+  permalink: /sustainability
+  description: Research aimed at creating environmentally and economically sustainable agricultural systems.
+
+ai-in-agriculture:
+  label: AI in Agriculture
+  permalink: /ai-in-agriculture
+  description: Exploring artificial intelligence applications in crop breeding, phenotyping, and agronomic innovation.
+
+research-updates:
+  label: Research Updates
+  permalink: /research-updates
+  description: Summaries and reflections on ongoing research projects, publications, and scientific findings.
+
+open-science:
+  label: Open Science
+  permalink: /open-science
+  description: Promoting transparency, reproducibility, and accessibility in plant research and computational biology.
+
+genomic-selection:
+  label: Genomic Selection
+  permalink: /genomic-selection
+  description: Exploring the use of DNA-based prediction methods to accelerate and improve crop breeding.
+
+agtech:
+  label: AgTech
+  permalink: /agtech
+  description: Technology-driven innovations transforming modern agriculture and food production systems.

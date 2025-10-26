@@ -1,44 +1,50 @@
 ---
-title: Introduction
+id: introduction
+title: Documentation Overview
 sidebar_position: 1
+description: Overview of the Plant Genetix documentation — research methods, datasets, and computational tools for modern crop improvement.
+slug: /
 ---
 
-# Welcome to My Documentations
+# Plant Genetix Documentation
 
-This is a platform by **Nelson Lubanga** showcasing research, innovation, and applied technologies in **plant science**.  
-This site brings together expertise in **quantitative genetics, predictive modeling, bioinformatics, and machine learning** to advance next-generation crop improvement.
+Welcome to the **Plant Genetix Docs** — a growing resource on genomics, modeling, and computational tools in modern plant breeding.
 
----
-
-## About Nelson
-
-With over a decade of experience in **R&D and academic research**, Nelson Lubanga has worked across a variety of crops including **tea, canola, ornamentals, and Miscanthus**.  
-His work focuses on:
-
-- **Plant Breeding & Genomics** – applying advanced statistical and genomic tools to accelerate crop improvement.
-- **Quantitative Genetics & Predictive Modeling** – designing breeding strategies with robust data-driven insights.
-- **Bioinformatics & Machine Learning** – leveraging modern computational tools for genome-wide analysis.
-- **R Shiny Applications** – developing interactive tools to visualize and interpret research data.
+This section complements the [Blog](/blog) by providing detailed explanations, reproducible workflows, and reference material for key tools and datasets.
 
 ---
 
-## What You'll Find Here
+## 🌿 What You’ll Find Here
 
-This documentation will give you access to:
-
-- 📑 **Research Notes** – summaries of key findings and published work.
-- 🧬 **Methods & Tools** – tutorials and insights on bioinformatics pipelines, machine learning models, and breeding strategies.
-- 🌱 **Case Studies** – practical applications of genomics and AI in crop improvement.
-- 💻 **Code & Applications** – open-source scripts, workflows, and Shiny apps for plant science.
+- **Method Notes:** Step-by-step outlines of genomic prediction, simulation, and statistical analysis methods used in research projects.
+- **Code Examples:** Snippets and templates in R, Python, and Bash for reproducible computation.
+- **Data Workflows:** Descriptions of datasets, preprocessing pipelines, and visualization strategies.
+- **App Guides:** Documentation for R Shiny tools and other software developed under the Plant Genetix umbrella.
 
 ---
 
-## Getting Started
+## 🧭 How It Connects
 
-- Explore the **[Research Overview](./research)** to see the current focus areas.
-- Visit **[Methods & Tools](./methods)** for tutorials and workflows.
+The **docs** are designed to work hand-in-hand with the **blog**:
+
+| Purpose               | Blog | Docs |
+| --------------------- | ---- | ---- |
+| Narrative, reflection | ✅   |      |
+| Technical detail      |      | ✅   |
+| Research updates      | ✅   |      |
+| Method reference      |      | ✅   |
+| Tutorials             | ⚡   | ✅   |
+
+Together, they form a complete ecosystem — combining open communication with rigorous, transparent science.
 
 ---
 
-💡 **The mission**:  
-_Harnessing the power of genomics, data science, and innovation to shape the future of plant breeding and agriculture._
+## 🚀 Next Steps
+
+- Start with [Genomic Selection Basics](./genomic-selection-basics)
+- Explore [Predictive Modeling Workflows](./predictive-modeling)
+- Check the [R Shiny App Docs](./tools/shiny-apps)
+
+---
+
+> 💬 **Tip:** All documentation is open for feedback — feel free to suggest improvements or share insights on implementations.
