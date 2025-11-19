@@ -11,7 +11,7 @@ import { Check } from "lucide-react";
 
 const services: { name: string; description: string; icon: string }[] = [
   {
-    name: "Genomic Selection Strategy",
+    name: "Genomic Selection",
     description:
       "Help breeding programs optimize trait selection using predictive models (linear mixed models and machine learning models).",
     icon: "🧬",
@@ -23,13 +23,13 @@ const services: { name: string; description: string; icon: string }[] = [
     icon: "📉",
   },
   {
-    name: "Trait Heritability Analysis",
+    name: "Trait Heritability",
     description:
       "Offer statistical insights into breeding value, genetic variance, and environmental influence on traits.",
     icon: "📊",
   },
   {
-    name: "Genotype by Environment (GxE) Analysis",
+    name: "Genotype x Environment Interaction (GxE) ",
     description:
       "Identify and interpret interactions between genotypes and environments to guide variety recommendations and adaptive breeding decisions.",
     icon: "🌍",
