@@ -80,7 +80,7 @@ export default function AboutPage() {
           <div className={styles.serviceList}>
             <ServiceItem
               emoji="🧬"
-              title="Genomic Selection Strategy"
+              title="Genomic Selection"
               description="Improve trait prediction using BLUP models, linear mixed models, and machine learning algorithms tailored to your breeding pipeline."
             />
             <ServiceItem
@@ -90,12 +90,12 @@ export default function AboutPage() {
             />
             <ServiceItem
               emoji="📊"
-              title="Trait Heritability Analysis"
+              title="Trait Heritability"
               description="Quantify genetic variance components, environmental influence, and breeding value estimation for key traits."
             />
             <ServiceItem
               emoji="🌍"
-              title="Genotype × Environment Analysis"
+              title="Genotype × Environment Interaction"
               description="Interpret G×E interactions and identify genotype stability, adaptability, and region-specific recommendations."
             />
             <ServiceItem
