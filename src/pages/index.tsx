@@ -5,7 +5,6 @@ import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 import styles from "./index.module.css";
 import { Check } from "lucide-react";
@@ -233,30 +232,6 @@ function ResearchFocus() {
   );
 }
 
-function StatsSection() {
-  const stats = [
-    { number: "10+", label: "Years Experience", icon: "🎓" },
-    { number: "6+", label: "Crop Species", icon: "🌱" },
-    { number: "15+", label: "R&D Projects", icon: "🔬" },
-  ];
-
-  return (
-    <section className={styles.statsSection}>
-      <div className="container">
-        <div className={styles.statsGrid}>
-          {stats.map((stat, index) => (
-            <div key={stat.label} className={styles.statCard}>
-              <div className={styles.statIcon}>{stat.icon}</div>
-              <div className={styles.statNumber}>{stat.number}</div>
-              <div className={styles.statLabel}>{stat.label}</div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
 export default function Home(): ReactNode {
   const { siteConfig } = useDocusaurusContext();
   return (
@@ -268,7 +243,6 @@ export default function Home(): ReactNode {
       <main>
         <ResearchFocus />
         {/* <StatsSection /> */}
-        {/* <HomepageFeatures /> */}
       </main>
     </Layout>
   );

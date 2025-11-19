@@ -18,6 +18,26 @@ export default function AboutPage() {
               Empowering plant breeders with genomic analytics, predictive
               modeling, and intelligent decision-support tools.
             </p>
+            <div className={styles.contactCard}>
+              <p>
+                <strong>Email:</strong>{" "}
+                <a href="mailto:info@plant-genetix.com">
+                  info@plant-genetix.com
+                </a>
+              </p>
+
+              <p>
+                <strong>Website:</strong>{" "}
+                <a href="https://plant-genetix.com" target="_blank">
+                  plant-genetix.com
+                </a>
+              </p>
+
+              {/* <p>
+                <strong>Phone:</strong>{" "}
+                <a href="tel:+254700000000">+254 700 000 000</a>
+              </p> */}
+            </div>
           </div>
         </section>
 
@@ -152,11 +172,13 @@ export const StatCard: React.FC<StatCardProps> = ({ number, label, icon }) => (
   </div>
 );
 
+/* --- TEAM --- */
+
 interface TeamMemberProps {
   name: string;
   role: string;
   bio: string;
-  image?: string; // optional
+  image?: string;
 }
 
 function TeamMember({ name, role, bio, image }: TeamMemberProps) {
@@ -170,11 +192,11 @@ function TeamMember({ name, role, bio, image }: TeamMemberProps) {
   );
 }
 
-export function TeamSection() {
+function TeamSection() {
   const team: TeamMemberProps[] = [
     {
       name: "Dr. Nelson Lubanga",
-      role: "Founder & Lead Genetist",
+      role: "Founder & Lead Geneticist",
       bio: "Specializes in genomic prediction, multi-environment trial analysis, and computational breeding strategies. Over 10 years of experience supporting breeding programs across tea, canola, ornamentals, and bioenergy crops.",
       image: "/img/team/nelson-dp.jpg",
     },
