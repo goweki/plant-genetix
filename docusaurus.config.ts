@@ -62,6 +62,7 @@ const config: Config = {
         src: "img/NL_symbol.svg",
       },
       items: [
+        { to: "/about", label: "About", position: "left" },
         {
           type: "docSidebar",
           sidebarId: "docsSidebar",

@@ -164,8 +164,8 @@ function HomepageHeader() {
           <h2 className={styles.heroSubtitle}>{siteConfig.tagline}</h2>
 
           <div className={styles.buttons}>
-            <Link className={clsx("button", styles.primaryButton)} to="#research-focus">
-              Focus Areas →
+            <Link className={clsx("button", styles.primaryButton)} to="/about">
+              About Us →
             </Link>
             {/* <Link
               className={clsx("button", styles.secondaryButton)}
@@ -201,8 +201,6 @@ function ResearchFocus() {
 
     return () => observer.disconnect();
   }, []);
-
-
 
   return (
     <section id="research-focus" className={styles.researchSection}>
@@ -269,7 +267,7 @@ export default function Home(): ReactNode {
       <HomepageHeader />
       <main>
         <ResearchFocus />
-        <StatsSection />
+        {/* <StatsSection /> */}
         {/* <HomepageFeatures /> */}
       </main>
     </Layout>

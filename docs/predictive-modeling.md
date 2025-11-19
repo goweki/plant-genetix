@@ -5,8 +5,6 @@ sidebar_position: 3
 description: Using data-driven modeling and AI to predict crop performance and optimize breeding pipelines.
 ---
 
-# Predictive Modeling in Crop Science
-
 Predictive modeling integrates statistics, machine learning, and agronomic data to **forecast plant performance**, identify key traits, and improve decision-making in breeding programs.
 
 ---
