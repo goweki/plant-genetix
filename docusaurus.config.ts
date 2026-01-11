@@ -3,7 +3,7 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "PlantGenetix Research",
+  title: "Plant-Genetix Research",
   tagline: "Advancing Plant Science for the Next Generation",
   favicon: "img/favicon.ico",
 
