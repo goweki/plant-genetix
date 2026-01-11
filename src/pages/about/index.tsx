@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "@theme/Layout";
 import styles from "./index.module.css";
+import clsx from "clsx";
 
 export default function AboutPage() {
   return (
@@ -17,7 +18,7 @@ export default function AboutPage() {
               Empowering plant breeders with genomic analytics, predictive
               modeling, and intelligent decision-support tools.
             </p>
-            <div className={styles.contactCard}>
+            <div className={clsx("card", styles.contactCard)}>
               <p>
                 <strong>Email:</strong>{" "}
                 <a href="mailto:info@plant-genetix.com">
@@ -148,7 +149,7 @@ export const ServiceItem: React.FC<ServiceItemProps> = ({
   title,
   description,
 }) => (
-  <div className={styles.serviceItem}>
+  <div className={clsx("card", styles.serviceItem)}>
     <div className={styles.serviceEmoji}>{emoji}</div>
     <div>
       <h3 className={styles.serviceTitle}>{title}</h3>
@@ -164,7 +165,7 @@ type StatCardProps = {
 };
 
 export const StatCard: React.FC<StatCardProps> = ({ number, label, icon }) => (
-  <div className={styles.statCard}>
+  <div className={clsx("card", styles.statCard)}>
     <div className={styles.statIcon}>{icon}</div>
     <div className={styles.statNumber}>{number}</div>
     <div className={styles.statLabel}>{label}</div>
@@ -182,7 +183,7 @@ interface TeamMemberProps {
 
 function TeamMember({ name, role, bio, image }: TeamMemberProps) {
   return (
-    <div className={styles.teamCard}>
+    <div className={clsx("card", styles.teamCard)}>
       {image && (
         <img
           src={image}

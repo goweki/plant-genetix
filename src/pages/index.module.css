@@ -402,21 +402,8 @@
 }
 
 .featureCard {
-  padding: 2rem;
-  border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-}
-
-.featureCard:hover {
-  border-color: rgba(255, 255, 255, 0.4);
-  transform: translateY(-0.5rem);
-  box-shadow: 0 25px 50px rgba(59, 130, 246, 0.2);
 }
 
 .featureCard::before {
@@ -448,6 +435,8 @@
   background: linear-gradient(45deg, #3b82f6, #06b6d4);
   margin-bottom: 1rem;
   transition: transform 0.3s ease;
+  width: fit-content;
+  height: fit-content;
 }
 
 .featureCard:hover .featureIcon {
@@ -459,6 +448,7 @@
 }
 
 .featureTitle {
+  color: var(--ifm-color-primary);
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 1rem;

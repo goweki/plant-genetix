@@ -1,11 +1,5 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
 :root {
+  /* Primary */
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
@@ -13,11 +7,20 @@
   --ifm-color-primary-light: #33925d;
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
+
+  /* Typography */
   --ifm-code-font-size: 95%;
+
+  /* Code highlight */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* UI Surfaces */
+  --ui-card-bg: hsla(120, 100%, 95%, 0.9);
+  --ui-popover-bg: hsla(120, 100%, 95%, 0.85);
+  --ui-card-border: hsla(120, 40%, 80%, 0.6);
+  --ui-card-shadow: 0 6px 24px hsla(120, 30%, 30%, 0.15);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
@@ -26,5 +29,28 @@
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
+
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  --ui-card-bg: hsla(120, 10%, 12%, 0.9);
+  --ui-popover-bg: hsla(120, 30%, 18%, 0.9);
+  --ui-card-border: hsla(120, 30%, 35%, 0.4);
+  --ui-card-shadow: 0 8px 30px hsla(120, 50%, 5%, 0.6);
+}
+
+.card {
+  background: var(--ui-card-bg);
+  border: 1px solid var(--ui-card-border);
+  border-radius: 1rem;
+  padding: 2rem;
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: var(--ui-card-shadow);
 }

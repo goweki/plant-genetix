@@ -111,8 +111,8 @@ interface ServiceCardProps {
 
 const ServiceCard = ({ name, description, icon }: ServiceCardProps) => {
   return (
-    <div className={styles.featureCard}>
-      <div className={styles.featureIcon}>
+    <div className={clsx("card", styles.featureCard)}>
+      <div className={clsx(styles.featureIcon)}>
         <span className={styles.iconText}>{icon}</span>
       </div>
       <h3 className={styles.featureTitle}>{name}</h3>

@@ -50,10 +50,6 @@
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-  padding: 1.5rem;
-  border-radius: 12px;
-  background: var(--ifm-background-surface-color);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
 }
 
 .serviceEmoji {
@@ -82,9 +78,6 @@
 .statCard {
   text-align: center;
   padding: 1.5rem;
-  background: var(--ifm-background-surface-color);
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
 }
 
 .statIcon {
@@ -107,12 +100,15 @@
   flex-wrap: wrap; /* allows items to wrap to next line */
   gap: 1.2rem; /* spacing between items */
   justify-content: center; /* centers items in the row */
-  background: var(--ifm-background-surface-color);
-  border-radius: 12px;
   padding: 1.5rem;
   margin: 1.5rem auto 0 auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   line-height: 1.6;
+}
+
+.contactCard:hover {
+  transform: none;
+  box-shadow: none;
 }
 
 .contactItem {
@@ -130,6 +126,10 @@
   text-decoration: underline;
 }
 
+.contactCard p {
+  margin: 0;
+}
+
 /**
 * TEAM
 */
@@ -139,19 +139,6 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-
-  padding: 1.75rem 1.5rem;
-  border-radius: 16px;
-
-  background: var(--ifm-card-background-color);
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
-
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.teamCard:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.12);
 }
 
 .teamImage {
