@@ -129,3 +129,63 @@
 .contactCard a:hover {
   text-decoration: underline;
 }
+
+/**
+* TEAM
+*/
+
+.teamCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  padding: 1.75rem 1.5rem;
+  border-radius: 16px;
+
+  background: var(--ifm-card-background-color);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.teamCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.12);
+}
+
+.teamImage {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+
+  border-radius: 50%;
+  margin-bottom: 1rem;
+
+  border: 3px solid var(--ifm-color-primary);
+}
+
+.teamName {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0.5rem 0 0.25rem;
+
+  color: var(--ifm-font-color-base);
+}
+
+.teamRole {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+
+  color: var(--ifm-color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.teamBio {
+  font-size: 0.95rem;
+  line-height: 1.6;
+
+  color: var(--ifm-font-color-secondary);
+}

@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "@theme/Layout";
 import styles from "./index.module.css";
-import clsx from "clsx";
 
 export default function AboutPage() {
   return (
@@ -26,12 +25,12 @@ export default function AboutPage() {
                 </a>
               </p>
 
-              <p>
+              {/* <p>
                 <strong>Website:</strong>{" "}
                 <a href="https://plant-genetix.com" target="_blank">
                   plant-genetix.com
                 </a>
-              </p>
+              </p> */}
 
               {/* <p>
                 <strong>Phone:</strong>{" "}
@@ -184,7 +183,15 @@ interface TeamMemberProps {
 function TeamMember({ name, role, bio, image }: TeamMemberProps) {
   return (
     <div className={styles.teamCard}>
-      {image && <img src={image} alt={name} className={styles.teamImage} />}
+      {image && (
+        <img
+          src={image}
+          alt={name}
+          className={styles.teamImage}
+          loading="lazy"
+        />
+      )}
+
       <h3 className={styles.teamName}>{name}</h3>
       <p className={styles.teamRole}>{role}</p>
       <p className={styles.teamBio}>{bio}</p>
@@ -202,8 +209,9 @@ function TeamSection() {
     },
     {
       name: "Antonio Gorbachev",
-      role: "Software Engineer & Data Scientist",
-      bio: "Specializes in TypeScript, Python, and data-driven application development. Builds scalable data pipelines, scientific tooling, and integrates machine learning workflows to support modern research analytics.",
+      role: "IT Solutions architect & Data scientist",
+      bio: "Specializes in data-driven application development and IT application design. Builds scalable data pipelines, scientific tooling, and integrates machine learning workflows to support modern research analytics.",
+      image: "/img/team/antonio-dp.jpg",
     },
   ];
 
@@ -215,9 +223,11 @@ function TeamSection() {
         machine learning, bioinformatics, and applied breeding science.
       </p>
 
-      <div className={styles.teamGrid}>
+      <div className="row">
         {team.map((member) => (
-          <TeamMember key={member.name} {...member} />
+          <div key={member.name} className="col col--4 margin-bottom--lg">
+            <TeamMember {...member} />
+          </div>
         ))}
       </div>
     </section>
